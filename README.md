@@ -19,27 +19,16 @@ Escopo:
 
 Observar com atenção:
 
-o não utilizar ip público 
-para saída do serviços 
-WP (Evitem publicar o 
-serviço WP via IP 
-Público) 
-o sugestão para o tráfego de 
-internet sair pelo LB 
-(Load Balancer Classic) 
-o pastas públicas e estáticos 
-do wordpress sugestão de 
-utilizar o EFS (Elastic 
-File Sistem) 
-o Fica a critério de cada 
-integrante usar Dockerfile 
-ou Dockercompose; 
-o Necessário demonstrar a 
-aplicação wordpress 
-funcionando (tela de 
-login) 
-o Aplicação Wordpress 
-precisa estar rodando na 
-porta 80 ou 8080; 
-o Utilizar repositório git 
-para versionamento; 
+o Não utilizar ip público para saída do serviços WP (Evitem publicar o serviço WP via IP Público) 
+
+o Sugestão para o tráfego de internet sair pelo LB (Load Balancer Classic) 
+
+o Pastas públicas e estáticos do wordpress sugestão de utilizar o EFS (Elastic File Sistem) 
+
+o Fica a critério de cada integrante usar Dockerfile ou Dockercompose; 
+
+o Necessário demonstrar a aplicação wordpress funcionando (tela de login) 
+
+o Aplicação Wordpress precisa estar rodando na porta 80 ou 8080; 
+
+o Utilizar repositório git para versionamento; 
