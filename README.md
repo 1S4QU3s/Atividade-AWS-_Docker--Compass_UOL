@@ -1,5 +1,8 @@
 # Atividade-AWS_Docker--Compass_UOL
 
+![image](https://github.com/1S4QU3s/Atividade-AWS-_Docker--Compass_UOL/assets/159395767/88a5abf3-9e83-4267-9cab-579f9aab3826)
+
+
 Escopo:
 
 1. Instalação e configuração do DOCKER ou CONTAINERD no host EC2; 
