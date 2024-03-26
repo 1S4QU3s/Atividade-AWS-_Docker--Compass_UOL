@@ -7,7 +7,8 @@ ARQUITETURA DO ATIVIDADE:
 
 Escopo:
 
-1. Instalação e configuração do DOCKER ou CONTAINERD no host EC2; Ponto adicional para o trabalho utilizar a instalação via script de Start Instance (user_data.sh) 
+1. Instalação e configuração do DOCKER ou CONTAINERD no host EC2; Ponto adicional para o trabalho
+utilizar a instalação via script de Start Instance (user_data.sh) 
 
 3. Efetuar Deploy de uma aplicação Wordpress com container de aplicação, RDS database Mysql 
 
