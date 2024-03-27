@@ -32,3 +32,26 @@ o Necessário demonstrar a aplicação wordpress funcionando (tela de login)
 o Aplicação Wordpress precisa estar rodando na porta 80 ou 8080; 
 
 o Utilizar repositório git para versionamento; 
+
+
+
+Primeira Etapa:
+
+No aba de pesquisa Search da Aws Pesquise por "VPC"
+
+
+![image](https://github.com/1S4QU3s/Atividade-AWS-_Docker--Compass_UOL/assets/159395767/6ebe6a03-6fa1-4481-936a-acb5369b0671)
+
+
+Em seguida configure duas subnets (Pública e Privada) ambas para duas zonas de disponibilidades (us-east-1a e us-east-1b)
+
+
+![image](https://github.com/1S4QU3s/Atividade-AWS-_Docker--Compass_UOL/assets/159395767/41063318-a14b-45dc-b29d-4f67faf8c8b0)
+
+![image](https://github.com/1S4QU3s/Atividade-AWS-_Docker--Compass_UOL/assets/159395767/30ef2198-72f2-4897-951c-0ca2caa1eeb1)
+
+Ao finalizar clique em "Mapa de resursos da VPC" o resultado será conforme abaixo:
+
+![image](https://github.com/1S4QU3s/Atividade-AWS-_Docker--Compass_UOL/assets/159395767/101b7521-bcfe-4cca-ad5e-e60681035814)
+
+
