@@ -6,6 +6,7 @@ ARQUITETURA DA ATIVIDADE:
 
 
  📜 ESCOPO:
+ 
 
 1. Instalação e configuração do DOCKER ou CONTAINERD no host EC2;
   Ponto adicional para o trabalho utilizar a instalação via script de Start Instance (user_data.sh) 
@@ -15,6 +16,7 @@ ARQUITETURA DA ATIVIDADE:
 3. configuração da utilização do serviço EFS AWS para estáticos do container de aplicação Wordpress 
 
 4. configuração do serviço de Load Balancer AWS para a aplicação Wordpress
+   
 
 
 🚨 Observar com atenção:
@@ -35,9 +37,12 @@ o Utilizar repositório git para versionamento;
 
 
 
+
+
 🚩Primeira Etapa:
 
-No aba de pesquisa  🔍 "Search" da Aws Pesquise por "VPC"
+
+Na aba de pesquisa  🔍 "Search" da Aws Pesquise por "VPC":
 
 
 ![image](https://github.com/1S4QU3s/Atividade-AWS-_Docker--Compass_UOL/assets/159395767/6ebe6a03-6fa1-4481-936a-acb5369b0671)
