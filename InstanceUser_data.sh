@@ -14,7 +14,7 @@ sudo usermod -aG docker ${USER}
 sudo curl -L "https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 #Permissões do diretório docker-compose
 sudo chmod +x /usr/local/bin/docker-compose
-curl -sL "https://raw.githubusercontent.com/ .....
+curl -sL "https://raw.githubusercontent.com/1S4QU3s/Atividade-AWS-_Docker--Compass_UOL/blob/main/docker_compose.yaml"
 #Instalar o nfs
 sudo yum install amazon-efs-utils -y
 # Criar diretório do nfs com as permissões de acesso
