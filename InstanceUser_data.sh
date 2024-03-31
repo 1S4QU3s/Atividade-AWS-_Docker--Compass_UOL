@@ -19,9 +19,9 @@ sudo yum install amazon-efs-utils -y
 # Criar diretório do nfs com as permissões de acesso
 sudo mkdir -m 666 /home/ec2-user/efs
 # Montar o Nfs
-mount -t nfs4 -o nfsvers=4.1,rsize=1048576,wsize=1048576,hard,timeo=600,retrans=2,noresvport fs-0eff467520b6bf2d8.efs.us-east-1.amazonaws.com:/ /home/ec2-user/efs
+mount -t nfs4 -o nfsvers=4.1,rsize=1048576,wsize=1048576,hard,timeo=600,retrans=2,noresvport fs-0b0c957512c3fbf29.efs.us-east-1.amazonaws.com:/ /home/ec2-user/efs
 # habilitar a montagem automática do Nfs 
-echo "fs-0eff467520b6bf2d8.efs.us-east-1.amazonaws.com:/ /home/ec2-user/efs nfs defaults 0 0" >> /etc/fstab
+echo "fs-0b0c957512c3fbf29.efs.us-east-1.amazonaws.com:/ /home/ec2-user/efs nfs defaults 0 0" >> /etc/fstab
 # Montar todos os arquivos que estiverem no /etc/fstab
 sudo mount -a
 # Criar diretório do docker-compose
@@ -37,9 +37,9 @@ services:
       - 80:80
     restart: always
     environment:
-      WORDPRESS_DB_HOST: <Ednpoint do DB>
-      WORDPRESS_DB_USER: <Master user do DB>
-      WORDPRESS_DB_PASSWORD: <Master password do DB>
-      WORDPRESS_DB_NAME: <Initial Name do DB>
+      WORDPRESS_DB_HOST: databasedocker.crqw4kak4zzq.us-east-1.rds.amazonaws.com
+      WORDPRESS_DB_USER: admin
+      WORDPRESS_DB_PASSWORD: Jksadd236
+      WORDPRESS_DB_NAME: databaseDocker
       WORDPRESS_TABLE_CONFIG: wp_" | sudo tee /mnt/efs/docker-compose.yml
 cd /mnt/efs && sudo docker-compose up -d
