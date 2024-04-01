@@ -27,7 +27,10 @@ sudo mount -a
 # Criar diretório do docker-compose
 sudo mkdir /home/ec2-user/docker-compose
 
-echo "version: '3.8'
+curl -L "https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m)" -o /bin/docker-compose
+chmod +x /bin/docker-compose
+cat <<EOL > /home/ec2-user/docker-compose.yaml
+version: '3.8'
 services:
   wordpress:
     image: wordpress:latest
@@ -35,11 +38,11 @@ services:
       - /mnt/efs/wordpress:/var/www/html
     ports:
       - 80:80
-    restart: always
     environment:
       WORDPRESS_DB_HOST: databasedocker.crqw4kak4zzq.us-east-1.rds.amazonaws.com
       WORDPRESS_DB_USER: admin
       WORDPRESS_DB_PASSWORD: Jksadd236
-      WORDPRESS_DB_NAME: databaseDocker
-      WORDPRESS_TABLE_CONFIG: wp_" | sudo tee /mnt/efs/docker-compose.yml
-cd /mnt/efs && sudo docker-compose up -d
+      WORDPRESS_DB_NAME: databasedocker
+EOL
+docker-compose -f /home/ec2-user/docker-compose.yaml up -d
+yum update
