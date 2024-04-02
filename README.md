@@ -41,14 +41,16 @@ o Utilizar repositório git para versionamento;
 
 🚩Primeira Etapa:
 
+`CRIAR A VPC`
 
-Na aba de pesquisa  🔍 "Search" da Aws Pesquise por "VPC":
+
+* Na aba de pesquisa  🔍 "Search" da Aws Pesquise por "VPC":
 
 
 ![image](https://github.com/1S4QU3s/Atividade-AWS-_Docker--Compass_UOL/assets/159395767/6ebe6a03-6fa1-4481-936a-acb5369b0671)
 
 
-Em seguida configure duas SubNets (Pública e Privada) ambas para duas zonas de disponibilidades (us-east-1a e us-east-1b)
+* Em seguida configure duas SubNets (Pública e Privada) ambas para duas zonas de disponibilidades (us-east-1a e us-east-1b)
 
 
 ![image](https://github.com/1S4QU3s/Atividade-AWS-_Docker--Compass_UOL/assets/159395767/41063318-a14b-45dc-b29d-4f67faf8c8b0)
@@ -56,14 +58,14 @@ Em seguida configure duas SubNets (Pública e Privada) ambas para duas zonas de 
 ![image](https://github.com/1S4QU3s/Atividade-AWS-_Docker--Compass_UOL/assets/159395767/30ef2198-72f2-4897-951c-0ca2caa1eeb1)
 
 
-Ao finalizar clique em "Mapa de resursos da VPC" o resultado será conforme abaixo:
+* Ao finalizar clique em "Mapa de resursos da VPC" o resultado será conforme abaixo:
 
 ![image](https://github.com/1S4QU3s/Atividade-AWS-_Docker--Compass_UOL/assets/159395767/101b7521-bcfe-4cca-ad5e-e60681035814)
 
 
 🚩Segunda Etapa:
 
-Criar os Security Groups:
+`CRIAR OS SECURITY GROUPS`
 
 * No menu EC2 procure por 🔍 `Security groups` na barra de navegação à esquerda.
 * Acesse e clique em `Criar novo grupo de segurança`, e crie os grupos de segurança a seguir.
@@ -94,6 +96,8 @@ Criar os Security Groups:
 
 
 🚩Terceira Etapa:
+
+`CRIAR O RDS`
 
 * Busque por RDS na Amazon AWS.
 * Na página de RDS clique em `Create database`:
@@ -137,6 +141,27 @@ Criar os Security Groups:
 ![image](https://github.com/1S4QU3s/Atividade-AWS-_Docker--Compass_UOL/assets/159395767/cc949531-a4cf-4934-9557-76521ce36f28)
 
 ![image](https://github.com/1S4QU3s/Atividade-AWS-_Docker--Compass_UOL/assets/159395767/497d7912-2dbc-4aab-bb60-ce7801359d55)
+
+
+🚩Quarta Etapa:
+
+`CRIAR O EFS`
+
+* Na aba de pesquisa  🔍 "Search" da Aws Pesquise por "EFS":
+
+* E em seguida clique em `Create file system`
+
+
+![image](https://github.com/1S4QU3s/Atividade-AWS-_Docker--Compass_UOL/assets/159395767/afcad368-547a-40ce-ad75-b62ecd485c0f)
+
+
+
+* E depois em `Costomize`
+
+![image](https://github.com/1S4QU3s/Atividade-AWS-_Docker--Compass_UOL/assets/159395767/03aa533e-b4e6-45c4-9124-0c84af76c3ae)
+
+
+
 
 
 
