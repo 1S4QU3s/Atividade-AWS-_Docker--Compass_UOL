@@ -124,4 +124,20 @@ Criar os Security Groups:
 ![image](https://github.com/1S4QU3s/Atividade-AWS-_Docker--Compass_UOL/assets/159395767/8e314ac5-8935-4100-9949-c3c6a27d5206)
 
 
+* Selecione a VPC criada.
+* Selecione o **SG-RDS**.
+
+![image](https://github.com/1S4QU3s/Atividade-AWS-_Docker--Compass_UOL/assets/159395767/bb91c9d2-cc2b-43d9-845a-7eb55180050c)
+
+
+* Em `Additional configuration` dê um nome inicial ao **DB**
+* E Finalize a criação do RDS em `Create database` 
+
+  
+![image](https://github.com/1S4QU3s/Atividade-AWS-_Docker--Compass_UOL/assets/159395767/cc949531-a4cf-4934-9557-76521ce36f28)
+
+![image](https://github.com/1S4QU3s/Atividade-AWS-_Docker--Compass_UOL/assets/159395767/497d7912-2dbc-4aab-bb60-ce7801359d55)
+
+
+
 
