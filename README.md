@@ -228,7 +228,7 @@ o Utilizar repositório git para versionamento;
 `CRIAR A INSTANCIA EC2`
 
 
-- Vá até o painel EC2 da Amazon              ![image](https://github.com/1S4QU3s/Atividade-AWS-_Docker--Compass_UOL/assets/159395767/c62b505a-49bc-43e1-9ddd-075233ba88b2)
+- Vá até o painel EC2 da Amazon             
 - Selecione **Launch Instance**                                                  
 - Selecione a imagem **Amazon Linux 2**
 - Selecione o tipo **t3.small**
@@ -237,7 +237,7 @@ o Utilizar repositório git para versionamento;
 - Clique em **edit network**, selecione a VPC anteriormente já criada;
 - Selecione a Subnet pública 1a e habilite o endereçamento de ip público;
 - Após, selecione o Security Group da Instancia Ec2;
-- No user data que fica em Advanced Details iremos adicionar o seguinte script:
+- No user data que fica em Advanced Details iremos adicionar o seguinte script:                      ![image](https://github.com/1S4QU3s/Atividade-AWS-_Docker--Compass_UOL/assets/159395767/c62b505a-49bc-43e1-9ddd-075233ba88b2)
 
 ```shell
 #!/bin/bash
@@ -288,5 +288,30 @@ services:
 EOL
 docker-compose -f /home/ec2-user/docker-compose.yaml up -d
 yum update
+```
 
+
+# Criando a AMI a partir da EC2
+- Vá até o serviço de EC2 no console AWS e acesse as instancias.
+- Selecione a instância previamente criada, clique com o botão direito sobre e vá em > "Image and Templates" > "Create Image"; Nomeie e finalize a criação.
+
+
+ ## Criação e configuração do Target Group
+ - No menu de **Load Balancing**, abaixo dele clique em **Target Groups**
+ - Depois em **Create target Group**
+ - Selecione **Instances**
+ - Selecione um nome 
+ - Selecione a VPC criada anteriormente e o resto deixaremos como está
+ - Clique em **next** e **create**
+ 
+ ## Configuração do Load Balancer
+ - Clique no menu a esquerda **Load Balancing** e depois em **Create Load Balancer**
+ - Depois em **Application Load Balancer**
+ - De um nome que desejar.
+ - Na opção **scheme** deixe em **Internet-facing**
+ - Em **IP address type** deixe em IPv4
+ - Associe a VPC criada anteriormente.
+ - Selecione duas AZs
+ - Selecione o SG criado anteriormente e por fim confirme a criação do LB.
+ 
 
