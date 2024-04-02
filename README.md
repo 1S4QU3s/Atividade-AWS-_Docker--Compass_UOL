@@ -19,6 +19,8 @@ ARQUITETURA DA ATIVIDADE:
    
 
 
+
+
 🚨 Observar com atenção:
 
 o Não utilizar ip público para saída do serviços WP (Evitem publicar o serviço WP via IP Público) 
@@ -39,15 +41,21 @@ o Utilizar repositório git para versionamento;
 
 
 
+
+
+
+
 🚩Primeira Etapa:
 
-`CRIAR A VPC`
+       `CRIAR A VPC`
+
 
 
 * Na aba de pesquisa  🔍 "Search" da Aws Pesquise por "VPC":
 
 
 ![image](https://github.com/1S4QU3s/Atividade-AWS-_Docker--Compass_UOL/assets/159395767/6ebe6a03-6fa1-4481-936a-acb5369b0671)
+
 
 
 * Em seguida configure duas SubNets (Pública e Privada) ambas para duas zonas de disponibilidades (us-east-1a e us-east-1b)
@@ -58,14 +66,19 @@ o Utilizar repositório git para versionamento;
 ![image](https://github.com/1S4QU3s/Atividade-AWS-_Docker--Compass_UOL/assets/159395767/30ef2198-72f2-4897-951c-0ca2caa1eeb1)
 
 
+
 * Ao finalizar clique em "Mapa de resursos da VPC" o resultado será conforme abaixo:
 
 ![image](https://github.com/1S4QU3s/Atividade-AWS-_Docker--Compass_UOL/assets/159395767/101b7521-bcfe-4cca-ad5e-e60681035814)
 
 
+
+
 🚩Segunda Etapa:
 
+
 `CRIAR OS SECURITY GROUPS`
+
 
 * No menu EC2 procure por 🔍 `Security groups` na barra de navegação à esquerda.
 * Acesse e clique em `Criar novo grupo de segurança`, e crie os grupos de segurança a seguir.
@@ -95,6 +108,9 @@ o Utilizar repositório git para versionamento;
   | NFS          | TCP      | 2049       | Anywhere    | 0.0.0.0/0   |
 
 
+
+
+
 🚩Terceira Etapa:
 
 `CRIAR O RDS`
@@ -102,13 +118,17 @@ o Utilizar repositório git para versionamento;
 * Busque por RDS na Amazon AWS.
 * Na página de RDS clique em `Create database`:
 
+  
+
 
 ![image](https://github.com/1S4QU3s/Atividade-AWS-_Docker--Compass_UOL/assets/159395767/ce820f85-e58f-432f-a7b9-bc03b8edc284)
 
 ![image](https://github.com/1S4QU3s/Atividade-AWS-_Docker--Compass_UOL/assets/159395767/323dac7f-9c0a-4ca2-a0c4-8efe735535de)
 
 
+
 * Em `Engine options` selecione **MySQL**
+
 
   
 ![image](https://github.com/1S4QU3s/Atividade-AWS-_Docker--Compass_UOL/assets/159395767/212093b0-d0f6-4683-bdda-2c45c61be941)
@@ -147,18 +167,30 @@ o Utilizar repositório git para versionamento;
 
 `CRIAR O EFS`
 
+
 * Na aba de pesquisa  🔍 "Search" da Aws Pesquise por "EFS":
 
 * E em seguida clique em `Create file system`
+
 
 
 ![image](https://github.com/1S4QU3s/Atividade-AWS-_Docker--Compass_UOL/assets/159395767/afcad368-547a-40ce-ad75-b62ecd485c0f)
 
 
 
+
 * E depois em `Costomize`
 
 ![image](https://github.com/1S4QU3s/Atividade-AWS-_Docker--Compass_UOL/assets/159395767/03aa533e-b4e6-45c4-9124-0c84af76c3ae)
+
+
+
+* Selecione o Security Group do EFS e finalize.
+
+
+  ![image](https://github.com/1S4QU3s/Atividade-AWS-_Docker--Compass_UOL/assets/159395767/a0762aa4-7114-4f43-98e3-b4f077909b3d)
+
+
 
 
 
