@@ -228,8 +228,8 @@ o Utilizar repositório git para versionamento;
 `CRIAR A INSTANCIA EC2`
 
 
-- Vá até o painel EC2 da Amazon
-- Selecione **Launch Instance**
+- Vá até o painel EC2 da Amazon              ![image](https://github.com/1S4QU3s/Atividade-AWS-_Docker--Compass_UOL/assets/159395767/c62b505a-49bc-43e1-9ddd-075233ba88b2)
+- Selecione **Launch Instance**                                                  
 - Selecione a imagem **Amazon Linux 2**
 - Selecione o tipo **t3.small**
 - Selecione a VPC que criamos anteriormente
