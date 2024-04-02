@@ -47,7 +47,8 @@ o Utilizar repositório git para versionamento;
 
 🚩Primeira Etapa:
 
-       `CRIAR A VPC`
+
+`CRIAR A VPC`
 
 
 
