@@ -46,11 +46,6 @@ o Utilizar repositório git para versionamento;
 
 
 
-
-`CRIAR A VPC:`
-
-
-
 * Na aba de pesquisa  🔍 "Search" da Aws Pesquise por "VPC":
 
 
@@ -100,7 +95,7 @@ o Utilizar repositório git para versionamento;
 
 
 
-## SEGUNDA ETAPA 🚩🚩
+## 🚩🚩SEGUNDA ETAPA > `CRIAR OS SECURITY GROUPS`
 
 
 `CRIAR OS SECURITY GROUPS`
