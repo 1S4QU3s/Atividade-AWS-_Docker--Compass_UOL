@@ -238,8 +238,7 @@ o Utilizar repositório git para versionamento;
 - Clique em **edit network**, selecione a VPC anteriormente já criada;
 - Selecione a Subnet pública 1a e habilite o endereçamento de ip público;
 - Após, selecione o Security Group da Instancia Ec2;
-- No user data que fica em Advanced Details iremos adicionar o seguinte script:       ![image](https://github.com/1S4QU3s/Atividade-AWS-_Docker--Compass_UOL/assets/159395767/6c838cdc-eb84-40f7-9a1a-97fdedde9f14)
-
+- No user data que fica em Advanced Details iremos adicionar o seguinte script:    
 
 
 ```shell
@@ -308,6 +307,9 @@ yum update
  - Clique em **next** e **create**
  
  ## Configuração do Load Balancer
+
+ ![image](https://github.com/1S4QU3s/Atividade-AWS-_Docker--Compass_UOL/assets/159395767/6a745e26-bae2-4698-b24e-8afe74638845)
+
  - Clique no menu a esquerda **Load Balancing** e depois em **Create Load Balancer**
  - Depois em **Application Load Balancer**
  - De um nome que desejar.
