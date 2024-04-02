@@ -225,7 +225,20 @@ o Utilizar repositório git para versionamento;
 
 
 
+`CRIAR A INSTANCIA EC2`
 
+
+- Vá até o painel EC2 da Amazon
+- Selecione **Launch Instance**
+- Selecione a imagem **Amazon Linux 2**
+- Selecione o tipo **t3.small**
+- Selecione a VPC que criamos anteriormente
+- Crie uma nova chave .pem
+- Clique em **edit network**, selecione a VPC anteriormente já criada;
+- Selecione a Subnet pública 1a e habilite o endereçamento de ip público;
+- Após, selecione o Security Group da Instancia Ec2;
+- No user data que fica em Advanced Details iremos adicionar o seguinte script.
+  
 
 
 
