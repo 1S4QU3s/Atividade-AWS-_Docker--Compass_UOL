@@ -45,7 +45,7 @@ o Utilizar repositório git para versionamento;
 
 
 
-🚩Primeira Etapa:
+🚩 o PRIMEIRA ETAPA:
 
 
 `CRIAR A VPC`
@@ -75,7 +75,7 @@ o Utilizar repositório git para versionamento;
 
 
 
-🚩Segunda Etapa:
+🚩 o SEGUNDA ETAPA:
 
 
 `CRIAR OS SECURITY GROUPS`
@@ -112,7 +112,7 @@ o Utilizar repositório git para versionamento;
 
 
 
-🚩Terceira Etapa:
+🚩 o TERCEIRA ETAPA:
 
 `CRIAR O RDS`
 
@@ -164,7 +164,7 @@ o Utilizar repositório git para versionamento;
 ![image](https://github.com/1S4QU3s/Atividade-AWS-_Docker--Compass_UOL/assets/159395767/497d7912-2dbc-4aab-bb60-ce7801359d55)
 
 
-🚩Quarta Etapa:
+🚩 o QUARTA ETAPA:
 
 `CRIAR O EFS`
 
