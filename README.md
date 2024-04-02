@@ -315,12 +315,28 @@ yum update
  ## 🚩9. > `CONFIGURAR O AUTO SCALING:`
 
 * No menu EC2 procure por `Auto Scaling` na barra de navegação à esquerda.
-* Acesse e clique em `Criar grupo do Auto Scaling`.
+* Acesse e clique em `Creat Auto Scaling group`.
 * Nomeio o grupo de Auto Scaling.
 * Selecione o modelo de execução criado anteriormente.
-* A seguir clique em `Próximo`.
+* A seguir clique em `Next`.
 * Selecione a VPC criada anteriormente.
-* Selecione as Sub-redes Privadas.   ![image](https://github.com/1S4QU3s/Atividade-AWS-_Docker--Compass_UOL/assets/159395767/16149c8e-2001-463a-b6f0-06a5392a536a)
+* Selecione as Sub-redes Privadas.
 
+ ![image](https://github.com/1S4QU3s/Atividade-AWS-_Docker--Compass_UOL/assets/159395767/16149c8e-2001-463a-b6f0-06a5392a536a)
+
+ 
+* Clique em `Next`.
+* Marque a opção `Attach to an existing load balancere`.
+* Marque a opção `Choose from your load balancer target groups`.
+* Selecione o grupo de destino criado anteriormente.
+* A seguir clique em `Next`.
+* Em `Group size` selecione:
+    - Capacidade desejada: 2
+    - Capacidade mínima: 2
+    - Capacidade máxima: 3
+* A seguir clique em `Skip to review`.
+* Clique em `Creat Auto Scaling group`.
+
+  
  
 
