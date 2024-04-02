@@ -42,10 +42,10 @@ o Utilizar repositório git para versionamento;
 
 
 
+## Criando Internet Gateway
 
 
-
-🚩`## PRIMEIRA ETAPA:`
+🚩`PRIMEIRA ETAPA:`
 
 
 `CRIAR A VPC`
