@@ -41,7 +41,7 @@ o Utilizar repositório git para versionamento;
 
 
 
-## 🚩PRIMEIRA ETAPA >  `CRIAR A VPC:`
+## 🚩 1. >  `CRIAR A VPC:`
 
 
 
@@ -95,10 +95,8 @@ o Utilizar repositório git para versionamento;
 
 
 
-## 🚩🚩SEGUNDA ETAPA > `CRIAR OS SECURITY GROUPS`
+## 🚩🚩 2. > `CRIAR OS SECURITY GROUPS:`
 
-
-`CRIAR OS SECURITY GROUPS`
 
 
 * No menu EC2 procure por 🔍 `Security groups` na barra de navegação à esquerda.
@@ -132,9 +130,8 @@ o Utilizar repositório git para versionamento;
 
 
 
-## TERCEIRA ETAPA 🚩🚩🚩
+## 🚩🚩🚩 3. > `CRIAR O RDS:`
 
-`CRIAR O RDS`
 
 * Busque por RDS na Amazon AWS.
 * Na página de RDS clique em `Create database`:
@@ -186,9 +183,8 @@ o Utilizar repositório git para versionamento;
 
 
 
-## QUARTA ETAPA 🚩🚩🚩🚩
+## 🚩🚩🚩🚩 4. > `CRIAR O EFS:`
 
-`CRIAR O EFS`
 
 
 * Na aba de pesquisa  🔍 "Search" da Aws Pesquise por "EFS":
@@ -216,7 +212,7 @@ o Utilizar repositório git para versionamento;
 
 
 
-## QUINTA ETAPA 🚩🚩🚩🚩🚩
+## 🚩🚩🚩🚩🚩 5. > `CRIAR A INSTANCIA EC2:`
 
 
 
@@ -287,13 +283,15 @@ docker-compose -f /home/ec2-user/docker-compose.yaml up -d
 yum update
 ```
 
+## 🚩🚩🚩🚩🚩🚩 6. > `CRIAR A AMI A PARTIR DA EC2:`
 
-# Criando a AMI a partir da EC2
+
 - Vá até o serviço de EC2 no console AWS e acesse as instancias.
 - Selecione a instância previamente criada, clique com o botão direito sobre e vá em > "Image and Templates" > "Create Image"; Nomeie e finalize a criação.
 
 
- ## Criação e configuração do Target Group
+ ## 🚩🚩🚩🚩🚩🚩 7. > `CRIAR O TARGET GROUP:`
+ 
  - No menu de **Load Balancing**, abaixo dele clique em **Target Groups**
  - Depois em **Create target Group**
  - Selecione **Instances**
@@ -301,7 +299,7 @@ yum update
  - Selecione a VPC criada anteriormente e o resto deixaremos como está
  - Clique em **next** e **create**
  
- ## Configuração do Load Balancer
+ ## 🚩🚩🚩🚩🚩🚩 8. > `CRIAR O LOAD BALANCER:`
 
  ![image](https://github.com/1S4QU3s/Atividade-AWS-_Docker--Compass_UOL/assets/159395767/6a745e26-bae2-4698-b24e-8afe74638845)
 
@@ -313,5 +311,15 @@ yum update
  - Associe a VPC criada anteriormente.
  - Selecione duas AZs
  - Selecione o SG criado anteriormente e por fim confirme a criação do LB.
+
+ ## 🚩🚩🚩🚩🚩🚩 9. > `CONFIGURAR O AUTO SCALING:`
+
+* No menu EC2 procure por `Auto Scaling` na barra de navegação à esquerda.
+* Acesse e clique em `Criar grupo do Auto Scaling`.
+* Nomeio o grupo de Auto Scaling.
+* Selecione o modelo de execução criado anteriormente.
+* A seguir clique em `Próximo`.
+* Selecione a VPC criada anteriormente.
+* Selecione as Sub-redes Privadas.
  
 
