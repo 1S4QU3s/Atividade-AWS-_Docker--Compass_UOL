@@ -189,7 +189,9 @@ o Utilizar repositório git para versionamento;
 ![image](https://github.com/1S4QU3s/Atividade-AWS-_Docker--Compass_UOL/assets/159395767/497d7912-2dbc-4aab-bb60-ce7801359d55)
 
 
-🚩## QUARTA ETAPA 🚩🚩🚩🚩
+
+
+## QUARTA ETAPA 🚩🚩🚩🚩
 
 `CRIAR O EFS`
 
@@ -216,6 +218,10 @@ o Utilizar repositório git para versionamento;
 
   ![image](https://github.com/1S4QU3s/Atividade-AWS-_Docker--Compass_UOL/assets/159395767/a0762aa4-7114-4f43-98e3-b4f077909b3d)
 
+
+
+
+## QUINTA ETAPA 🚩🚩🚩🚩🚩
 
 
 
