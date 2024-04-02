@@ -41,7 +41,7 @@ o Utilizar repositório git para versionamento;
 
 
 
-## 🚩 1. >  `CRIAR A VPC:`
+## 🚩1. >  `CRIAR A VPC:`
 
 
 
@@ -95,7 +95,7 @@ o Utilizar repositório git para versionamento;
 
 
 
-## 🚩🚩 2. > `CRIAR OS SECURITY GROUPS:`
+## 🚩2. > `CRIAR OS SECURITY GROUPS:`
 
 
 
@@ -130,7 +130,7 @@ o Utilizar repositório git para versionamento;
 
 
 
-## 🚩🚩🚩 3. > `CRIAR O RDS:`
+## 🚩3. > `CRIAR O RDS:`
 
 
 * Busque por RDS na Amazon AWS.
@@ -183,7 +183,7 @@ o Utilizar repositório git para versionamento;
 
 
 
-## 🚩🚩🚩🚩 4. > `CRIAR O EFS:`
+## 🚩4. > `CRIAR O EFS:`
 
 
 
@@ -212,7 +212,7 @@ o Utilizar repositório git para versionamento;
 
 
 
-## 🚩🚩🚩🚩🚩 5. > `CRIAR A INSTANCIA EC2:`
+## 🚩5. > `CRIAR A INSTANCIA EC2:`
 
 
 
@@ -283,14 +283,14 @@ docker-compose -f /home/ec2-user/docker-compose.yaml up -d
 yum update
 ```
 
-## 🚩🚩🚩🚩🚩🚩 6. > `CRIAR A AMI A PARTIR DA EC2:`
+## 🚩6. > `CRIAR A AMI A PARTIR DA EC2:`
 
 
 - Vá até o serviço de EC2 no console AWS e acesse as instancias.
 - Selecione a instância previamente criada, clique com o botão direito sobre e vá em > "Image and Templates" > "Create Image"; Nomeie e finalize a criação.
 
 
- ## 🚩🚩🚩🚩🚩🚩 7. > `CRIAR O TARGET GROUP:`
+ ## 🚩7. > `CRIAR O TARGET GROUP:`
  
  - No menu de **Load Balancing**, abaixo dele clique em **Target Groups**
  - Depois em **Create target Group**
@@ -299,7 +299,7 @@ yum update
  - Selecione a VPC criada anteriormente e o resto deixaremos como está
  - Clique em **next** e **create**
  
- ## 🚩🚩🚩🚩🚩🚩 8. > `CRIAR O LOAD BALANCER:`
+ ## 🚩8. > `CRIAR O LOAD BALANCER:`
 
  ![image](https://github.com/1S4QU3s/Atividade-AWS-_Docker--Compass_UOL/assets/159395767/6a745e26-bae2-4698-b24e-8afe74638845)
 
@@ -312,7 +312,7 @@ yum update
  - Selecione duas AZs
  - Selecione o SG criado anteriormente e por fim confirme a criação do LB.
 
- ## 🚩🚩🚩🚩🚩🚩 9. > `CONFIGURAR O AUTO SCALING:`
+ ## 🚩9. > `CONFIGURAR O AUTO SCALING:`
 
 * No menu EC2 procure por `Auto Scaling` na barra de navegação à esquerda.
 * Acesse e clique em `Criar grupo do Auto Scaling`.
@@ -320,6 +320,7 @@ yum update
 * Selecione o modelo de execução criado anteriormente.
 * A seguir clique em `Próximo`.
 * Selecione a VPC criada anteriormente.
-* Selecione as Sub-redes Privadas.
+* Selecione as Sub-redes Privadas.   ![image](https://github.com/1S4QU3s/Atividade-AWS-_Docker--Compass_UOL/assets/159395767/16149c8e-2001-463a-b6f0-06a5392a536a)
+
  
 
