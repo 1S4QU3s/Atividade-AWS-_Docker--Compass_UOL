@@ -92,6 +92,7 @@ Criar os Security Groups:
   |--------------|----------|------------|-------------|-------------|
   | NFS          | TCP      | 2049       | Anywhere    | 0.0.0.0/0   |
 
+
 🚩Terceira Etapa:
 
 * Busque por RDS na Amazon AWS.
@@ -104,6 +105,23 @@ Criar os Security Groups:
 
 
 * Em `Engine options` selecione **MySQL**
-![image](https://github.com/1S4QU3s/Atividade-AWS-_Docker--Compass_UOL/assets/159395767/da932016-712c-4f60-b93a-bae9f5ce01d6)
+
+  
+![image](https://github.com/1S4QU3s/Atividade-AWS-_Docker--Compass_UOL/assets/159395767/212093b0-d0f6-4683-bdda-2c45c61be941)
+
+
+* Em `Templates` selecione **Free tier**
+
+
+  ![image](https://github.com/1S4QU3s/Atividade-AWS-_Docker--Compass_UOL/assets/159395767/e2594a29-bd54-4b7f-94e0-6f71b7ebb724)
+
+
+* Em `Settings` dê um nome identicador para o **DB**.
+* Escolha um `username`.
+* Escolha uma `senha`.
+
+  
+![image](https://github.com/1S4QU3s/Atividade-AWS-_Docker--Compass_UOL/assets/159395767/8e314ac5-8935-4100-9949-c3c6a27d5206)
+
 
 
