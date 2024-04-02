@@ -326,7 +326,7 @@ yum update
 
  
 * Clique em `Next`.
-* Marque a opção `Attach to an existing load balancere`.
+* Marque a opção `Attach to an existing load balancer`.
 * Marque a opção `Choose from your load balancer target groups`.
 * Selecione o grupo de destino criado anteriormente.
 * A seguir clique em `Next`.
