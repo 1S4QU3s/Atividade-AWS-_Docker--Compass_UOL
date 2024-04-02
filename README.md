@@ -239,56 +239,41 @@ o Utilizar repositório git para versionamento;
 - Após, selecione o Security Group da Instancia Ec2;
 - No user data que fica em Advanced Details iremos adicionar o seguinte script:
 
+```shell
 #!/bin/bash
-# Os comandos abaixo consiste em:
-# Atualizar o sistema 
-sudo yum update -y
-# Instalar o docker
+# Instalar Docker-CE ( Container Engine): 
+sudo yum update
 sudo yum install docker -y
-# Iniciar o docker
 sudo systemctl start docker
-# habilitar o docker ao iniciar a instância
 sudo systemctl enable docker
-# Habilitar o usuário atual ao grupo do docker
 sudo usermod -aG docker ec2-user
-# curl no docker-compose
-sudo curl -L "https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
-#Permissões do diretório docker-compose
+# Instalar Docker Compose:
+sudo curl -SL https://github.com/docker/compose/releases/download/v2.19.1/docker-compose-linux-x86_64 -o /usr/local/bin/docker-compose
 sudo chmod +x /usr/local/bin/docker-compose
-#Instalar o nfs
+# EFS
 sudo yum install amazon-efs-utils -y
-# Criar diretório do nfs com as permissões de acesso
 sudo mkdir -m 666 /home/ec2-user/efs
-# Montar o Nfs
-mount -t nfs4 -o nfsvers=4.1,rsize=1048576,wsize=1048576,hard,timeo=600,retrans=2,noresvport fs-0b0c957512c3fbf29.efs.us-east-1.amazonaws.com:/ /home/ec2-user/efs
-# habilitar a montagem automática do Nfs 
-echo "fs-0b0c957512c3fbf29.efs.us-east-1.amazonaws.com:/ /home/ec2-user/efs nfs defaults 0 0" >> /etc/fstab
-# Montar todos os arquivos que estiverem no /etc/fstab
+sudo echo "${ID_EFS}   /home/ec2-user/efs    efs     defaults,_netdev    0   0" | sudo tee -a /etc/fstab
 sudo mount -a
-# Criar diretório do docker-compose
+# Cria o docker-compose.yaml
 sudo mkdir /home/ec2-user/docker-compose
-
-curl -L "https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m)" -o /bin/docker-compose
-chmod +x /bin/docker-compose
-cat <<EOL > /home/ec2-user/docker-compose.yaml
-version: '3.8'
-services:
-  wordpress:
-    image: wordpress:latest
-    volumes:
-      - /mnt/efs/wordpress:/var/www/html
-    ports:
-      - 80:80
-    environment:
-      WORDPRESS_DB_HOST: databasedocker.crqw4kak4zzq.us-east-1.rds.amazonaws.com
-      WORDPRESS_DB_USER: admin
-      WORDPRESS_DB_PASSWORD: Jksadd236
-      WORDPRESS_DB_NAME: databaseDocker
-EOL
-docker-compose -f /home/ec2-user/docker-compose.yaml up -d
-yum update
-  
-
+sudo echo -e "version: '3.1'\n 
+services:\n
+  wordpress:\n
+    image: wordpress:latest\n        
+    restart: always\n
+    ports:\n
+      - 80:80\n
+    environment:\n
+      WORDPRESS_DB_HOST: ${ENDPOINT_RDS}\n
+      WORDPRESS_DB_USER: admin\n
+      WORDPRESS_DB_PASSWORD: 12345678\n
+      WORDPRESS_DB_NAME: wordpress\n
+    volumes:\n
+      - /home/ec2-user/efs:/var/www/html\n
+" | sudo tee /home/ec2-user/docker-compose/docker-compose.yml
+sudo sed -i '/^$/d' /home/ec2-user/docker-compose/docker-compose.yml
+```
 
 
 
