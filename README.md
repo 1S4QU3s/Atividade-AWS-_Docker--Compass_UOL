@@ -70,7 +70,33 @@ o Utilizar repositório git para versionamento;
 
 * Ao finalizar clique em "Mapa de resursos da VPC" o resultado será conforme abaixo:
 
-![image](https://github.com/1S4QU3s/Atividade-AWS-_Docker--Compass_UOL/assets/159395767/101b7521-bcfe-4cca-ad5e-e60681035814)
+![image](https://github.com/1S4QU3s/Atividade-AWS-_Docker--Compass_UOL/assets/159395767/0f72eccb-9473-4378-8f7c-6363aed2fffd)
+
+
+
+## Criando Internet Gateway
+- Vá ate o menu de Internet Gateway e clique em **Create Internet Gateway**
+- De um nome de sua preferência, e associe-o á nossa VPC criada anteriorimente.
+
+## Criando NAT gateway
+- Ainda no menu de VPC, clique **NAT Gateway** e depois em **Create Nat gateway**
+- De um nome de sua escolha, selecione uma sub-net publica, criada anteriormente e em **Connectivity type** deixe como público.
+- Por fim associe um elastic IP e crie a NAT.
+
+## Criando Sub-nets
+- No menu de VPC ainda, vá em subnets e depois em **Create subnet**
+- Crie duas sub-redes, uma pública e uma privada, elas precisam estar na mesma zona de disponibilidade. Repita o processo para a segunda zona de diponibilidade;
+
+## Criando tabela de rotas
+- Crie uma Route table em **route tables** e depois em **create route table**
+- Crie duas tabelas, uma para sub-nets privadas e outra para sub-nets públicas.
+- Depois associe cada sub-net a sua respectiva tabela, privada na tabela privada e publica na tabela publica.
+- Selecione a tabela privada e clique em **Edit Routes** o Destinatinatio deve ser 0.0.0.0/0 e o Target deve ser o **NAT Gateways**, o mesmo que criamos a pouco.
+- Selecione a tabela publica e clique em **Edit Routes** o Destinatinatio deve ser 0.0.0.0/0 e o Target deve ser o **internet gateways**, o mesmo que criamos a pouco.
+
+
+
+
 
 
 
