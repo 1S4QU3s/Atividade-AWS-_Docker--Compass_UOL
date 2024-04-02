@@ -227,6 +227,7 @@ o Utilizar repositório git para versionamento;
 
 `CRIAR A INSTANCIA EC2`
 
+![image](https://github.com/1S4QU3s/Atividade-AWS-_Docker--Compass_UOL/assets/159395767/c62b505a-49bc-43e1-9ddd-075233ba88b2)
 
 - Vá até o painel EC2 da Amazon             
 - Selecione **Launch Instance**                                                  
@@ -237,7 +238,9 @@ o Utilizar repositório git para versionamento;
 - Clique em **edit network**, selecione a VPC anteriormente já criada;
 - Selecione a Subnet pública 1a e habilite o endereçamento de ip público;
 - Após, selecione o Security Group da Instancia Ec2;
-- No user data que fica em Advanced Details iremos adicionar o seguinte script:                      ![image](https://github.com/1S4QU3s/Atividade-AWS-_Docker--Compass_UOL/assets/159395767/c62b505a-49bc-43e1-9ddd-075233ba88b2)
+- No user data que fica em Advanced Details iremos adicionar o seguinte script:       ![image](https://github.com/1S4QU3s/Atividade-AWS-_Docker--Compass_UOL/assets/159395767/6c838cdc-eb84-40f7-9a1a-97fdedde9f14)
+
+
 
 ```shell
 #!/bin/bash
