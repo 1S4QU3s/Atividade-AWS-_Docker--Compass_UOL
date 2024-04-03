@@ -102,19 +102,19 @@ o Utilizar repositório git para versionamento;
 * No menu EC2 procure por 🔍 `Security groups` na barra de navegação à esquerda.
 * Acesse e clique em `Criar novo grupo de segurança`, e crie os grupos de segurança a seguir.
 
+
 #### SG-LOAD BALANCER
   | Type         | Protocol | Port Range | Source Type | Source      |
   |--------------|----------|------------|-------------|-------------|
   | HTTP         | TCP      | 80         | Anywhere    | 0.0.0.0/0   |
-  | HTTPS        | TCP      | 443        | Anywhere    | 0.0.0.0/0   |
-  | SSH          | TCP      | 22         | Anywhere    | 0.0.0.0/0   |
-  
+
+ 
 #### SG-INST_EC2
   | Type         | Protocol | Port Range | Source Type |  Source          |
   |--------------|----------|------------|-------------|------------------|
   | SSH          | TCP      | 22         | Anywhere    | 0.0.0.0/0        |
   | HTTP         | TCP      | 80         | Custom      | SG-LOAD BALANCER |
-  | HTTPS        | TCP      | 443        | Anywhere    | 0.0.0.0/0        |
+  
 
 #### SG-RDS
   | Type         | Protocol | Port Range | Source Type | Source      |
