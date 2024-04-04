@@ -1,14 +1,13 @@
 version: '3.8'
-
 services:
   wordpress:
     image: wordpress:latest
-    ports:
-      - "80:80"
-    environment:
-      WORDPRESS_DB_HOST: database-docker.crqw4kak4zzq.us-east-1.rds.amazonaws.com
-      WORDPRESS_DB_USER: Admuser
-      WORDPRESS_DB_PASSWORD: Jksadd236
-      WORDPRESS_DB_NAME: database_Docker
     volumes:
-      - /home/ec2-user/efs:/var/www/html
+      - /home/ec2-user/efs/wordpress:/var/www/html
+    ports:
+      - 80:80
+    environment:
+      WORDPRESS_DB_HOST: rds-docker.crqw4kak4zzq.us-east-1.rds.amazonaws.com
+      WORDPRESS_DB_USER: admin
+      WORDPRESS_DB_PASSWORD: Jksadd236
+      WORDPRESS_DB_NAME: docker_db
