@@ -337,6 +337,12 @@ yum update
 * A seguir clique em `Skip to review`.
 * Clique em `Creat Auto Scaling group`.
 
+
+##  TESTE DA PÁGINA INICIAL WB:
+
+
+![image](https://github.com/1S4QU3s/Atividade-AWS-_Docker--Compass_UOL/assets/159395767/3c14851d-1dde-45e1-93fc-0dc4fb3975a2)
+
   
  
 
