@@ -19,7 +19,7 @@ sudo mkdir -m 777 /home/ec2-user/efs
 #Instalar o nfs
 sudo yum install amazon-efs-utils -y
 # Montar o Nfs
-mount -t nfs4 -o nfsvers=4.1,rsize=1048576,wsize=1048576,hard,timeo=600,retrans=2,noresvport fs-0b0c957512c3fbf29.efs.us-east-1.amazonaws.com:/ /home/ec2-user/efs
+sudo mount -t nfs4 -o nfsvers=4.1,rsize=1048576,wsize=1048576,hard,timeo=600,retrans=2,noresvport fs-0b0c957512c3fbf29.efs.us-east-1.amazonaws.com:/ /home/ec2-user/efs
 # habilitar a montagem automática do Nfs 
 echo "fs-0b0c957512c3fbf29.efs.us-east-1.amazonaws.com:/ /home/ec2-user/efs nfs defaults 0 0" >> /etc/fstab
 # Montar todos os arquivos que estiverem no /etc/fstab
