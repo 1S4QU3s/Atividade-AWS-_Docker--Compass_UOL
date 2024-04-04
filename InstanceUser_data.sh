@@ -36,10 +36,10 @@ services:
     ports:
       - 80:80
     environment:
-      WORDPRESS_DB_HOST: databasedocker.crqw4kak4zzq.us-east-1.rds.amazonaws.com
+      WORDPRESS_DB_HOST: rds-docker.crqw4kak4zzq.us-east-1.rds.amazonaws.com
       WORDPRESS_DB_USER: admin
       WORDPRESS_DB_PASSWORD: Jksadd236
-      WORDPRESS_DB_NAME: databaseDocker
+      WORDPRESS_DB_NAME: docker_db
 EOL
 
 docker-compose -f /home/ec2-user/efs/docker-compose.yaml up -d
