@@ -229,7 +229,21 @@
 - Clique em **edit network**, selecione a VPC anteriormente já criada;
 - Selecione a Subnet pública 1a e habilite o endereçamento de ip público;
 - Após, selecione o Security Group da Instancia Ec2;
-- No user data que fica em Advanced Details iremos adicionar o seguinte script:    
+
+
+  ## 🚩6. > `CRIAR A AMI A PARTIR DA EC2:`
+
+
+- Vá até o serviço de EC2 no console AWS e acesse as instancias.
+- Selecione a instância previamente criada, clique com o botão direito sobre e vá em > "Image and Templates" > "Create Image"; Nomeie e finalize a criação.
+
+
+
+ ## 🚩7. > `CRIAR O TEMPLATE DA EC2:`
+
+![image](https://github.com/1S4QU3s/Atividade-AWS-_Docker--Compass_UOL/assets/159395767/fb48813f-e896-4090-8442-8f91e36dabbe)
+
+ - No user data que fica em Advanced Details iremos adicionar o seguinte script:    
 
 
 ```shell
@@ -280,14 +294,9 @@ EOL
 docker-compose -f /home/ec2-user/efs/docker-compose.yaml up -d
 ```
 
-## 🚩6. > `CRIAR A AMI A PARTIR DA EC2:`
 
 
-- Vá até o serviço de EC2 no console AWS e acesse as instancias.
-- Selecione a instância previamente criada, clique com o botão direito sobre e vá em > "Image and Templates" > "Create Image"; Nomeie e finalize a criação.
-
-
- ## 🚩7. > `CRIAR O TARGET GROUP:`
+ ## 🚩8. > `CRIAR O TARGET GROUP:`
  
  - No menu de **Load Balancing**, abaixo dele clique em **Target Groups**
  - Depois em **Create target Group**
@@ -296,7 +305,7 @@ docker-compose -f /home/ec2-user/efs/docker-compose.yaml up -d
  - Selecione a VPC criada anteriormente e o resto deixaremos como está
  - Clique em **next** e **create**
  
- ## 🚩8. > `CRIAR O CLASSIC LOAD BALANCER:`
+ ## 🚩9. > `CRIAR O CLASSIC LOAD BALANCER:`
 
  ![image](https://github.com/1S4QU3s/Atividade-AWS-_Docker--Compass_UOL/assets/159395767/cbedcc17-2779-43d2-b213-88d53bc57023)
 
@@ -310,7 +319,7 @@ docker-compose -f /home/ec2-user/efs/docker-compose.yaml up -d
  - Selecione duas AZs
  - Selecione o SG criado anteriormente e por fim confirme a criação do LB.
 
- ## 🚩9. > `CONFIGURAR O AUTO SCALING:`
+ ## 🚩10. > `CONFIGURAR O AUTO SCALING:`
 
 * No menu EC2 procure por `Auto Scaling` na barra de navegação à esquerda.
 * Acesse e clique em `Creat Auto Scaling group`.
