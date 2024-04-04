@@ -8,6 +8,8 @@ sudo yum install docker -y
 sudo systemctl start docker
 # habilitar o docker ao iniciar a instância
 sudo systemctl enable docker
+# Habilitar o usuário atual ao grupo do docker
+sudo usermod -aG docker ec2-user
 # curl no docker-compose
 sudo curl -L "https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m)" -o /bin/docker-compose
 #Permissões do diretório docker-compose
@@ -22,8 +24,6 @@ mount -t nfs4 -o nfsvers=4.1,rsize=1048576,wsize=1048576,hard,timeo=600,retrans=
 echo "fs-0b0c957512c3fbf29.efs.us-east-1.amazonaws.com:/ /home/ec2-user/efs nfs defaults 0 0" >> /etc/fstab
 # Montar todos os arquivos que estiverem no /etc/fstab
 sudo mount -a
-# Habilitar o usuário atual ao grupo do docker
-sudo usermod -aG docker ec2-user
                                                                                                                          
 #Docker-compose
 cat <<EOL > /home/ec2-user/efs/docker-compose.yaml
