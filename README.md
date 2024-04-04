@@ -299,12 +299,12 @@ yum update
  - Selecione a VPC criada anteriormente e o resto deixaremos como está
  - Clique em **next** e **create**
  
- ## 🚩8. > `CRIAR O LOAD BALANCER:`
+ ## 🚩8. > `CRIAR O CLASSIC LOAD BALANCER:`
 
  ![image](https://github.com/1S4QU3s/Atividade-AWS-_Docker--Compass_UOL/assets/159395767/6a745e26-bae2-4698-b24e-8afe74638845)
 
  - Clique no menu a esquerda **Load Balancing** e depois em **Create Load Balancer**
- - Depois em **Application Load Balancer**
+ - Depois em **Classic Load Balancer**
  - De um nome que desejar.
  - Na opção **scheme** deixe em **Internet-facing**
  - Em **IP address type** deixe em IPv4
@@ -338,10 +338,16 @@ yum update
 * Clique em `Creat Auto Scaling group`.
 
 
-##  TESTE DA PÁGINA INICIAL WB:
+##  TESTE DA PÁGINA INICIAL DO WORDPRESS PELO DNS DO LOAD BALANCER:
+
+* Copie o nome do DNS e cole no navegador: 
 
 
-![image](https://github.com/1S4QU3s/Atividade-AWS-_Docker--Compass_UOL/assets/159395767/3c14851d-1dde-45e1-93fc-0dc4fb3975a2)
+![image](https://github.com/1S4QU3s/Atividade-AWS-_Docker--Compass_UOL/assets/159395767/a7beea57-ce16-4466-bdd0-f3b2a2be1708)
+
+
+![image](https://github.com/1S4QU3s/Atividade-AWS-_Docker--Compass_UOL/assets/159395767/11a38617-cdbc-4dcd-a967-048d747a1eae)
+
 
   
  
