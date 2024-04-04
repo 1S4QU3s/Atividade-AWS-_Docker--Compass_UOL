@@ -301,7 +301,8 @@ yum update
  
  ## 🚩8. > `CRIAR O CLASSIC LOAD BALANCER:`
 
- ![image](https://github.com/1S4QU3s/Atividade-AWS-_Docker--Compass_UOL/assets/159395767/6a745e26-bae2-4698-b24e-8afe74638845)
+ ![image](https://github.com/1S4QU3s/Atividade-AWS-_Docker--Compass_UOL/assets/159395767/cbedcc17-2779-43d2-b213-88d53bc57023)
+
 
  - Clique no menu a esquerda **Load Balancing** e depois em **Create Load Balancer**
  - Depois em **Classic Load Balancer**
@@ -340,10 +341,14 @@ yum update
 
 ##  TESTE DA PÁGINA INICIAL DO WORDPRESS PELO DNS DO LOAD BALANCER:
 
-* Copie o nome do DNS e cole no navegador: 
+
+* Copie o nome do DNS e cole no navegador : 
+
 
 
 ![image](https://github.com/1S4QU3s/Atividade-AWS-_Docker--Compass_UOL/assets/159395767/a7beea57-ce16-4466-bdd0-f3b2a2be1708)
+
+
 
 
 ![image](https://github.com/1S4QU3s/Atividade-AWS-_Docker--Compass_UOL/assets/159395767/11a38617-cdbc-4dcd-a967-048d747a1eae)
